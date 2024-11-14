@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Quiz</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+
+    <!-- Seção de perguntas -->
+    <section id="visivel">
+        <div class="container">
+            <h1>Halloween Quiz</h1>
+            <img src="../img/skeleton.gif" alt="Halloween Imagem" class="center-image">
+            <div class="question" id="question"></div>
+            <div class="answers" id="answers"></div>
+            <div class="result" id="result"></div>
+            <button id="next" onclick="nextQuestion()">Next Question</button>
+            
+            <div class="score" id="score">Score: 0</div>
+            <a href="menu.html">
+                <button id="backVisivel">BACK</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção de erro (aparece quando o usuário erra) -->
+    <section id="visivel2" style="display: none;">
+        <div id="jumpscare" class="jumpscare"></div> <!-- Imagem de jumpscare -->
+        <a href="menu.html">
+            <button id="back">BACK</button>
+        </a>
+    </section>
+
+    <!-- Áudio de jumpscare -->
+    <div class="audio">
+        <audio id="background-audio" src="./mp3/loboSusto.mp3"></audio>
+    </div>
+
+    <script src="./JS/index.js"></script>
+</body>
+</html>

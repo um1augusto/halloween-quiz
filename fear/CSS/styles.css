@@ -1,0 +1,112 @@
+/* Estilos gerais do corpo */
+body {
+    background-color: #1a1a1a;
+    color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+#backVisivel {
+    margin-left: 25%;
+    padding: 10px 20px;
+    transform: translateX(-50%); /* Centraliza horizontalmente com precisão */
+    padding: 10px 20px;
+    background-color: #ff7518;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+/* Estilo do botão de "back" (voltar) */
+#back {
+    display: none;
+    position: absolute; /* Posicionamento absoluto */
+    bottom: 20px; /* Ajuste a posição vertical */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente com precisão */
+    padding: 10px 20px;
+    background-color: #ff7518;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#back:hover {
+    background-color: #ff9933;
+}
+
+/* Classe para ocultar seções */
+body.invisivel {
+    display: none;
+}
+
+head.invisivel {
+    display: none;
+}
+
+/* Estilo para a tela de jumpscare */
+html.jumpscare {
+    background-image: url("../../img/lobo.png"); /* Caminho para a imagem */
+    background-size: cover;     
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100%;       
+    overflow: hidden;      
+}
+
+/* Container das perguntas */
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a imagem central */
+.center-image {
+    display: flex;
+    margin: 0 auto;
+    width: 80%; 
+    height: auto; 
+}
+
+/* Título das perguntas */
+h1 {
+    color: orange;
+}
+
+/* Estilo dos botões de resposta */
+.answer-btn {
+    background-color: #ff7518;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.answer-btn:hover {
+    background-color: #ff9933;
+}
+
+/* Estilo da exibição da resposta correta/incorreta */
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* Botão para a próxima questão */
+#next {
+    display: none;
+    margin-top: 20px;
+}

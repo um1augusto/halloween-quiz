@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu do Jogo</title>
+    <link rel="stylesheet" href="./CSS/menu.css">
+</head>
+<body>
+    <div class="menu-container" id="menu">
+        <h1>Bem-vindo ao Halloween Quiz!</h1>
+        <div class="menu">
+            <!-- Botão para Iniciar o Jogo -->
+            <button id="start-btn" class="menu-btn">Iniciar Jogo</button>
+            <a href="score.html">
+                <button id="score-btn" class="menu-btn">Ver Pontuação</button>
+            </a>
+            <a href="./login.html">
+            <button id="logout-btn" class="menu-btn">Sair</button>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Evento de clique para iniciar o jogo e redirecionar para index.html
+        document.getElementById('start-btn').addEventListener('click', function() {
+            window.location.href = 'index.html';  // Redireciona para a página do quiz
+        });
+    </script>
+</body>
+</html>
+
